@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const WebGLApp = () => {
+export const RedT = () => {
 	const canvasRef = useRef(null);
 	useEffect(() => {
 		const canvas = canvasRef.current;
@@ -96,18 +96,6 @@ const WebGLApp = () => {
 		//3 = how many vertices to draw
 		gl.drawArrays(gl.TRIANGLES, 0, 3)
 	}, []);
-	return <canvas ref={canvasRef} />;
+	return <canvas ref={canvasRef} style={{ "height": "30%", "width": "30%" }} />;
 };
 
-
-export const RedT = () => {
-
-
-	return (
-		<>
-			<div>RedT</div>
-			<WebGLApp />
-		</>
-
-	)
-}
