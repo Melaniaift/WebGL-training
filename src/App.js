@@ -1,9 +1,10 @@
 import './App.css';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { RedT } from './components/RedT';
+import { RedTriangle } from './components/RedTriangle';
 import { ColoredTriangle } from './components/ColoredTriangle';
-import { RotatingT } from './components/RotatingT';
+import { RotatingTriangle } from './components/RotatingTriangle';
+import { Cube } from './components/Cube';
 
 function App() {
     const username = "Melania"
@@ -11,14 +12,14 @@ function App() {
     return (
         <>
             <Header />
-            <div className="App">
 
-            </div>
-            <RedT></RedT>
+            <RedTriangle></RedTriangle>
 
             <ColoredTriangle></ColoredTriangle>
-            
-            <RotatingT></RotatingT>
+
+            <RotatingTriangle></RotatingTriangle>
+
+            <Cube></Cube>
             <p className="active">{username}</p>
             <Footer />
         </>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { glMatrix, mat4 } from '../assets/gl-matrix';
+import { glMatrix, mat4 } from 'gl-matrix';
 
-export const RotatingT = () => {
+export const RotatingTriangle = () => {
     const canvasRef = useRef(null);
     useEffect(() => {
         const canvas = canvasRef.current;

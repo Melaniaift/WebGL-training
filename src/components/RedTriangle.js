@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export const RedT = () => {
+export const RedTriangle = () => {
 	const canvasRef = useRef(null);
 	useEffect(() => {
 		const canvas = canvasRef.current;
