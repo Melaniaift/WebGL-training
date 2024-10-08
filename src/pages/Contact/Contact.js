@@ -9,9 +9,9 @@ export const Contact = () => {
     navigate('/')
   }
   return (
-    <div>
+    <main>
       <Outlet />
       <button onClick={handleSubmit}>Submit Form</button>
-    </div>
+    </main>
   )
 }

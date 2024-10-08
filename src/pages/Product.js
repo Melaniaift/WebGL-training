@@ -6,8 +6,8 @@ export const Product = () => {
     console.error(params)
 
     return (
-        <div>
+        <main>
             <h1>Product detail {params}</h1>
-        </div>
+        </main>
     )
 }

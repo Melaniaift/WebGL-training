@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ContactIn = () => {
   return (
-    <div>ContactIn</div>
+    <main>ContactIn</main>
   )
 }

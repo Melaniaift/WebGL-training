@@ -6,7 +6,7 @@ import { Cube } from '../components/Cube';
 
 export const Objects = () => {
     return (
-        <div>
+        <main>
             <RedTriangle></RedTriangle>
 
             <ColoredTriangle></ColoredTriangle>
@@ -14,6 +14,6 @@ export const Objects = () => {
             <RotatingTriangle></RotatingTriangle>
 
             <Cube></Cube>
-        </div>
+        </main>
     )
 }
