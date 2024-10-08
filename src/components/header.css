@@ -1,3 +1,83 @@
-.logo{
-    height: 40px;
+/* Modern header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blurred background for a modern effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Ensures header stays on top */
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    /* Slightly larger logo */
+    height: 50px;
+    margin-right: 15px;
+    /* Increased space between logo and text */
+    border-radius: 10px;
+    /* Rounded edges for a softer look */
+}
+
+.logo span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #22262a;
+    /* Darker text for contrast */
+    letter-spacing: 1px;
+    /* Slightly spaced letters for modern typography */
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    gap: 30px;
+    /* More space between links */
+}
+
+.navigation .link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    /* Modern blue color */
+    text-decoration: none;
+    position: relative;
+    /* For underline effect */
+    transition: color 0.3s ease;
+}
+
+/* Modern hover effect with underline */
+.navigation .link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navigation .link:hover::after {
+    width: 100%;
+    /* Underline grows from left to right on hover */
+}
+
+.navigation .link:hover {
+    color: #465057;
+    /* Darker blue on hover */
 }

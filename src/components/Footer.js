@@ -1,5 +1,12 @@
+import "./footer.css"
+
 export const Footer = () => {
+
+  const year = new Date().getFullYear();
+  const username = "Melania";
   return (
-    <div>2024</div>
+    <footer>
+      {year} @{username}
+    </footer>
   )
 }

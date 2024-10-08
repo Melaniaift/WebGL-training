@@ -1,7 +1,3 @@
-# Check the application
-
-[WebGL](https://web-gl-melift.netlify.app/)
-
 # This project is a first attempt to configure a React application with WebGL
 
 ## Resources used:

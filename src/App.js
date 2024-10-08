@@ -1,26 +1,36 @@
 import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom"
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { RedTriangle } from './components/RedTriangle';
-import { ColoredTriangle } from './components/ColoredTriangle';
-import { RotatingTriangle } from './components/RotatingTriangle';
-import { Cube } from './components/Cube';
+import { Contact } from './pages/Contact';
+import { ContactEu } from './components/ContactEu';
+import { ContactIn } from './components/ContactIn';
+import { ContactUs } from './components/ContactUs';
+
+import { Objects } from './pages/Objects';
+import { Home } from './pages/Home';
+import { Product } from './pages/Product'
+import { Products } from './pages/Products'
+import { PageNotFound } from './pages/PageNotFound';
 
 function App() {
-    const username = "Melania"
-
     return (
         <>
             <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/objects" element={<Objects />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/product/:id" element={<Product />} />
+                <Route path="/contact" element={<Contact />} >
+                    <Route path="in" element={<ContactIn />} />
+                    <Route path="eu" element={<ContactEu />} />
+                    <Route path="us" element={<ContactUs />} />
+                </Route>
 
-            <RedTriangle></RedTriangle>
-
-            <ColoredTriangle></ColoredTriangle>
-
-            <RotatingTriangle></RotatingTriangle>
-
-            <Cube></Cube>
-            <p className="active">{username}</p>
+                {/* <Route path="*" element={<Navigate to="/" />} /> */}
+                <Route path="*" element={<PageNotFound title='404' />} />
+            </Routes>
             <Footer />
         </>
     )

@@ -1,0 +1,29 @@
+/* Footer container styling */
+footer {
+    display: flex;
+    justify-content: right; /* Center the content */
+    align-items: center;
+    padding: 20px 40px; /* Same padding as header for consistency */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow to match header */
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 0; /* Aligns footer at the bottom of the viewport */
+    left: 0;
+    right: 0; /* Ensures it stretches the full width */
+    color: #1d2328; /* Darker text color for contrast */
+    font-size: 16px; /* Adjust the font size as needed */
+    z-index: 100; /* Ensures the footer stays on top */
+  }
+  
+  /* If you want to add links in the footer */
+  footer a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    margin-left: 10px; /* Space between links */
+  }
+  
+  footer a:hover {
+    color: #1d6fa5; /* Darker color on hover */
+  }
+  
