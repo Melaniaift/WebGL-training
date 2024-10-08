@@ -28,7 +28,6 @@ function App() {
                     <Route path="us" element={<ContactUs />} />
                 </Route>
 
-                {/* <Route path="*" element={<Navigate to="/" />} /> */}
                 <Route path="*" element={<PageNotFound title='404' />} />
             </Routes>
             <Footer />
