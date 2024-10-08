@@ -1,5 +1,7 @@
 # This project is a first attempt to configure a React application with WebGL
 
+Open the web application [WebGL](https://web-gl-melift.netlify.app/)
+
 ## Resources used:
 
 [Create React App](https://github.com/facebook/create-react-app)
