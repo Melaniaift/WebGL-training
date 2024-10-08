@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Contact, Objects, Home, Product, Products, PageNotFound, ContactEu, ContactIn, ContactUs } from '../pages/index';
 
